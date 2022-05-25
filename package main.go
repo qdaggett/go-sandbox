@@ -30,8 +30,29 @@ func main() {
 
 	test()
 
+	strings()
+
+}
+
+// Strings
+func strings() {
+	shString := "Shorthand string" // Shorthand declaration
+
+	var ndString string
+	ndString = "Normally declared string" // Regular string declaration
+
+	for index, s := range "Test" { // Iterating over strng
+		fmt.Println(index)
+		fmt.Println(s)
+	}
+
+	// Printing
+	fmt.Println(shString)
+	fmt.Println(ndString)
+
 }
 
 func test() {
+	fmt.Println("Trolled")
 
 }
