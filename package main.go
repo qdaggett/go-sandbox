@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -30,12 +33,12 @@ func main() {
 
 	test()
 
-	strings()
+	test_strings()
 
 }
 
 // Strings
-func strings() {
+func test_strings() {
 	shString := "Shorthand string" // Shorthand declaration
 
 	var ndString string
@@ -49,6 +52,18 @@ func strings() {
 	// Printing
 	fmt.Println(shString)
 	fmt.Println(ndString)
+
+	// String trimming using trim
+	cutString := strings.Trim(ndString, "string")
+
+	// String trimming using trimspace
+	spaceString := "   trolled   "
+
+	noSpaceString := strings.TrimSpace(spaceString)
+
+	fmt.Println(noSpaceString)
+
+	fmt.Println(cutString)
 
 }
 
