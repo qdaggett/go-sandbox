@@ -65,6 +65,12 @@ func test_strings() {
 
 	fmt.Println(cutString)
 
+	// String splitting
+	fullStr := "Hello there"
+
+	splitStr := strings.Split(fullStr, " ")
+
+	fmt.Println(splitStr)
 }
 
 func test() {
