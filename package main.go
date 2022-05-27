@@ -35,6 +35,8 @@ func main() {
 
 	test_strings()
 
+	test_pointers()
+
 }
 
 // Strings
@@ -71,6 +73,29 @@ func test_strings() {
 	splitStr := strings.Split(fullStr, " ")
 
 	fmt.Println(splitStr)
+}
+
+func test_pointers() {
+	// Pointers to variables
+	testVal := 3
+
+	pointVal := &testVal
+
+	fmt.Println("Value of testVal: ", testVal)
+
+	fmt.Println("Address of pointVal: ", pointVal)
+
+	fmt.Println("Value of pointVal: ", *pointVal)
+
+	// Pointers to functions
+	var x = 200
+
+	pointer_function(&x)
+
+}
+
+func pointer_function(a *int) {
+	*a = 100
 }
 
 func test() {
